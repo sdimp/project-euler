@@ -20,15 +20,9 @@ for i in nums:
 end = time.time()
 print(max_pal, end - start)
 
-# possible improvement: above method requires me to check through
-# all possible products (as it is looking for something larger). 
-# instead start backwards from 999 and move downwards, and as soon
-# as you run into a palindrome, that is clearly the biggest one. 
-# this is implemented below, BUT IS WRONG!!! 
-
-# why is it wrong? because, for example: 999*200 might be a palindrome, 
+# why is stuff below wrong? because, for example: 999*200 might be a palindrome, 
 # and that is what the code might return, whereas 857 * 899 might be 
-# the greatest palindrome. IMPORTANT LESSON LEARNED. 
+# the greatest palindrome.
 
 rev_nums = range(999, 99, -1)
 
